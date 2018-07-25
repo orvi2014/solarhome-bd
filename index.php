@@ -38,10 +38,38 @@ if (isset($_POST['submit'])) {
   $json = file_get_contents($api_pv);
 
   $obj =(json_decode($json,true));
-  //accessing json array
+  //echo gettype($obj);
+
+  //ccessing json array
  // check postman
- // postman  value=$obj['Parentkey']['child1 Key']
-  echo ($obj['inputs']['tilt']);
+//  postman  value=$obj['Parentkey']['child1 Key']
+$value =$obj['inputs']['tilt'];
+$keys = array_keys($obj);
+$temp=$keys[0];//inputs
+$temp1=$keys[6];//outputs
+
+//creating monthly array
+$ac_monthly,$poa_monthly,$solrad_monthly,$dc_monthly=array();
+$newtitlte, $anual_ac, $annual_solrad;
+//fetching data into variables
+for($i = 0; $i < count($obj); $i++) {
+  if ($temp=="inputs"){
+      $newtitlte = $obj[$temp]['tilt'];
+  }
+  if ($temp1=="outputs"){
+    $annunal_ac=$obj[$temp1]['ac_annual'];
+    $annual_solrad=$obj[$temp1]['solrad_annual'];
+    for($j=0; $j<12;$j++){
+      $ac_monthly[] = $obj[$temp1]['ac_monthly'][$j];
+      $poa_monthly[]=$obj[$temp1]['poa_monthly'][$j];
+      $solrad_monthly[]=$obj[$temp1]['solrad_monthly'][$j];
+      $dc_monthly[]=$obj[$temp1]['dc_monthly'][$j];
+
+    }
+    }
+  }
+  }
+
   //$api_rate="https://developer.nrel.gov/api/utility_rates/v3.json?api_key="
   //*add variables to concate string*
   //api_key=api_key&system_capacity=4&azimuth=180&tilt=40&array_type=1&module_type=1&losses=10&address=address";
@@ -60,7 +88,6 @@ if (isset($_POST['submit'])) {
 //} else {
 //    echo "Error: " . $insert_value . "<br>" . mysqli_error($db);
 //}
-}
 // Hmm. now submit button click insert into database.
 
 // closing database connection
