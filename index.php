@@ -10,19 +10,56 @@ mysqli_query($db, $query);
 $result = mysqli_query($db, $query);
 $row = mysqli_fetch_array($result);
 
-// trying to insert so far so good
-// Sytax error problem=https://www.w3schools.com/php/php_mysql_insert.asp
-// issue remained for resultdate(timecall)
+//API design
 
 if (isset($_POST['submit'])) {
+  //Declearing API variables
+  $api_key='vyeJ0snvGu5V2DuiyhBgNLnUmOZfl09iIKPjl6N5';
+  $system_capacity=$_POST["dc"];
+  $azimuth=180;
+  $tilt=$_POST["titlt"];;
+  $array_type=1;
+  $module_type=1;
+  $losses=20;
+  $address=$_POST["location"];
+  $inv_eff=98;
+  $gcr=0;
+  $api_pv = "https://developer.nrel.gov/api/pvwatts/v6.json?" . http_build_query(array(
+  'api_key' => $api_key,
+  'system_capacity' => $system_capacity,
+  'azimuth' => $azimuth,
+  'tilt'=>$tilt,
+  'array_type'=>$array_type,
+  'module_type'=>$module_type,
+  'losses'=>$losses,
+  'address'=>$address,
+));
 
-$insert_value="INSERT INTO solarhome (id, company, phone, email, location, dc, titlt, ratetype, tkrate, result, result_date) VALUES (NULL, '".$_POST["company"]."','".$_POST["email"]."','".$_POST["phone"]."','".$_POST["location"]."','".$_POST["dc"]."','".$_POST["titlt"]."','".$_POST["ratetype"]."','".$_POST["rate"]."','', '')";
+  $json = file_get_contents($api_pv);
 
-if (mysqli_query($db, $insert_value)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $insert_value . "<br>" . mysqli_error($db);
-}
+  $obj =(json_decode($json,true));
+  //accessing json array
+ // check postman
+ // postman  value=$obj['Parentkey']['child1 Key']
+  echo ($obj['inputs']['tilt']);
+  //$api_rate="https://developer.nrel.gov/api/utility_rates/v3.json?api_key="
+  //*add variables to concate string*
+  //api_key=api_key&system_capacity=4&azimuth=180&tilt=40&array_type=1&module_type=1&losses=10&address=address";
+
+//
+
+  //Stop Right here for API
+
+// trying to insert so far so good
+// Sytax error problem=https://www.w3schools.com/php/php_mysql_insert.asp
+//$insert_value="INSERT INTO solarhome (id, company, phone, email, location, dc, titlt, ratetype, tkrate, result, result_date) VALUES (NULL, '".$_POST["company"]."','".$_POST["email"]."','".$_POST["phone"]."','".$_POST["location"]."','".$_POST["dc"]."','".$_POST["titlt"]."','".$_POST["ratetype"]."','".$_POST["rate"]."','', '')";
+
+//if (mysqli_query($db, $insert_value)) {
+
+//    echo "New record created successfully";
+//} else {
+//    echo "Error: " . $insert_value . "<br>" . mysqli_error($db);
+//}
 }
 // Hmm. now submit button click insert into database.
 
@@ -403,7 +440,7 @@ Click the help icon above to learn more.
 			<section id="team" class="eight_sec_plx_team_section section">
         <div class="container w3-container w3-center w3-animate-bottom">
           <!-- submit form -->
-  <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  <form id="contact" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <h3>PVI Calculator</h3>
     <fieldset>
       <input placeholder="Company Name" name="company" type="text" tabindex="1" required autofocus>
