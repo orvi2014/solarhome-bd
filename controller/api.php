@@ -68,6 +68,9 @@ for($i = 0; $i < count($obj); $i++) {
     }
   }
   $_SESSION['company'] = $_POST['company'];
+  $_SESSION['annunal_ac'] =$annunal_ac;
+  $_SESSION['ac_monthly'] =$ac_monthly;
+
 }
 header('Location: /solarhome/solarhome-bd/view/result.php');
  ?>
