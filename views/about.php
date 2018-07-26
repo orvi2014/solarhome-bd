@@ -1,4 +1,4 @@
-<section id="about-us" class="eight_sec_plx_about_section section">
+<section id="projects" class="eight_sec_plx_about_section section">
   <div class="ed-container">
               <div class="section-title">
         <h2 class="about-sec wow fadeIn" data-wow-duration="2s">ABOUT EIGHT SEC</h2>

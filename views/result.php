@@ -1,17 +1,13 @@
 <?php
-session_start();
-?>
-<?php
 // .. used for path back
 //".$_SESSION['ac_monthly'][0]."
 //";
 //post method session reciving
-
+include 'databaseinsert.php';
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
 <?php include 'head_result.php'; ?>
-<
 
 <body>
   <?php include 'header.php'; ?>
@@ -113,7 +109,7 @@ session_start();
           <td><?php echo $_SESSION['value'][12]; ?></td>
         </tr>
       </tbody>
-      
+
     </table>
   </div>
 </section>
