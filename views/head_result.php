@@ -18,8 +18,6 @@
 <link rel='stylesheet' id='isotope-css-css'  href='css/isotope-docs.css' type='text/css' media='all' />
 <link rel='stylesheet' id='eight-sec-style-css'  href='css/style.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='eight-sec-responsive-css-css'  href='css/responsive.css?ver=4.9.7' type='text/css' media='all' />
-<link rel='stylesheet' id='calculator'  href='css/calculator.css' type='text/css' media='all' />
-<link rel="stylesheet" href="css/w3.css">
 
 <script type='text/javascript' src='js/jquery/jquery.js'></script>
 <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
@@ -91,10 +89,6 @@ var pf = {"spam":{"label":"I'm human!","value":"6b86e54a60"}};
 				clip: rect(1px, 1px, 1px, 1px);
 			}
 
-			/*
-You can add your own CSS here.
-
-Click the help icon above to learn more.
-*/
+<?php include 'result_css.php'; ?>
 		</style>
 	</head>

@@ -5,101 +5,13 @@ session_start();
 // .. used for path back
 //".$_SESSION['ac_monthly'][0]."
 //";
+//post method session reciving
+
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
 <?php include 'head_result.php'; ?>
-<style>
-h1{
-  font-size: 30px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 15px;
-}
-table{
-  width:100%;
-  table-layout: fixed;
-}
-.tbl-header{
-  background-color: rgba(255,255,255,0.3);
- }
-.tbl-content{
-  height:300px;
-  overflow-x:auto;
-  margin-top: 0px;
-  border: 1px solid rgba(255,255,255,0.3);
-}
-th{
-  padding: 20px 15px;
-  text-align: left;
-  font-weight: 500;
-  font-size: 12px;
-  color: #fff;
-  text-transform: uppercase;
-}
-td{
-  padding: 15px;
-  text-align: left;
-  vertical-align:middle;
-  font-weight: 300;
-  font-size: 12px;
-  color: #fff;
-  border-bottom: solid 1px rgba(255,255,255,0.1);
-}
-
-
-/* demo styles */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-body{
-  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #25c481, #25b7c4);
-  font-family: 'Roboto', sans-serif;
-}
-section{
-  margin: 50px;
-}
-
-
-/* follow me template */
-.made-with-love {
-  margin-top: 40px;
-  padding: 10px;
-  clear: left;
-  text-align: center;
-  font-size: 10px;
-  font-family: arial;
-  color: #fff;
-}
-.made-with-love i {
-  font-style: normal;
-  color: #F50057;
-  font-size: 14px;
-  position: relative;
-  top: 2px;
-}
-.made-with-love a {
-  color: #fff;
-  text-decoration: none;
-}
-.made-with-love a:hover {
-  text-decoration: underline;
-}
-
-
-/* for custom scrollbar for webkit browser*/
-
-::-webkit-scrollbar {
-    width: 6px;
-}
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}</style>
+<
 
 <body>
   <?php include 'header.php'; ?>
@@ -110,11 +22,10 @@ section{
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-          <th>Code</th>
-          <th>Company</th>
-          <th>Price</th>
-          <th>Change</th>
-          <th>Change %</th>
+          <th>Month</th>
+          <th>Solar Radiation</th>
+          <th>AC Monthly</th>
+          <th>Value</th>
         </tr>
       </thead>
     </table>
@@ -123,230 +34,86 @@ section{
     <table cellpadding="0" cellspacing="0" border="0">
       <tbody>
         <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
+          <td>January</td>
+          <td><?php echo $_SESSION['solrad_monthly'][0]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][0]; ?></td>
+          <td><?php echo $_SESSION['value'][0]; ?></td>
+
         </tr>
         <tr>
-          <td>AAD</td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
-          <td>-0.01</td>
-          <td>-1.36%</td>
+          <td>February</td>
+          <td><?php echo $_SESSION['solrad_monthly'][1]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][1]; ?></td>
+          <td><?php echo $_SESSION['value'][1]; ?></td>
         </tr>
         <tr>
-          <td>AAX</td>
-          <td>ADELAIDE</td>
-          <td>$3.22</td>
-          <td>+0.01</td>
-          <td>+1.36%</td>
+          <td>March</td>
+            <td><?php echo $_SESSION['solrad_monthly'][2]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][2]; ?></td>
+          <td><?php echo $_SESSION['value'][2]; ?></td>
         </tr>
         <tr>
-          <td>XXD</td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
-          <td>-1.01</td>
-          <td>+2.36%</td>
+          <td>April</td>
+          <td><?php echo $_SESSION['solrad_monthly'][3]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][3]; ?></td>
+          <td><?php echo $_SESSION['value'][3]; ?></td>
         </tr>
         <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
+          <td>May</td>
+            <td><?php echo $_SESSION['solrad_monthly'][4]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][4]; ?> </td>
+          <td><?php echo $_SESSION['value'][4]; ?></td>
         </tr>
         <tr>
-          <td>AAD</td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
-          <td>-0.01</td>
-          <td>-1.36%</td>
+          <td>June</td>
+          <td><?php echo $_SESSION['solrad_monthly'][5]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][5]; ?></td>
+          <td><?php echo $_SESSION['value'][5]; ?></td>
         </tr>
         <tr>
-          <td>AAX</td>
-          <td>ADELAIDE</td>
-          <td>$3.22</td>
-          <td>+0.01</td>
-          <td>+1.36%</td>
+          <td>July</td>
+          <td><?php echo $_SESSION['solrad_monthly'][6]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][6]; ?></td>
+          <td><?php echo $_SESSION['value'][6]; ?></td>
         </tr>
         <tr>
-          <td>XXD</td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
-          <td>-1.01</td>
-          <td>+2.36%</td>
+          <td>August</td>
+          <td><?php echo $_SESSION['solrad_monthly'][7]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][7]; ?></td>
+          <td><?php echo $_SESSION['value'][7]; ?></td>
         </tr>
         <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
+          <td>September</td>
+          <td><?php echo $_SESSION['solrad_monthly'][8]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][8]; ?></td>
+          <td><?php echo $_SESSION['value'][8]; ?></td>
         </tr>
         <tr>
-          <td>AAD</td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
-          <td>-0.01</td>
-          <td>-1.36%</td>
+          <td>Octobor</td>
+          <td><?php echo $_SESSION['solrad_monthly'][9]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][9]; ?></td>
+          <td><?php echo $_SESSION['value'][9]; ?></td>
         </tr>
         <tr>
-          <td>AAX</td>
-          <td>ADELAIDE</td>
-          <td>$3.22</td>
-          <td>+0.01</td>
-          <td>+1.36%</td>
+          <td>November</td>
+          <td><?php echo $_SESSION['solrad_monthly'][10]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][10]; ?></td>
+          <td><?php echo $_SESSION['value'][10]; ?></td>
         </tr>
         <tr>
-          <td>XXD</td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
-          <td>-1.01</td>
-          <td>+2.36%</td>
+          <td>December</td>
+          <td><?php echo $_SESSION['solrad_monthly'][11]; ?></td>
+          <td><?php echo $_SESSION['ac_monthly'][11]; ?></td>
+          <td><?php echo $_SESSION['value'][11]; ?></td>
         </tr>
-        <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
-        </tr>
-        <tr>
-          <td>AAD</td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
-          <td>-0.01</td>
-          <td>-1.36%</td>
-        </tr>
-        <tr>
-          <td>AAX</td>
-          <td>ADELAIDE</td>
-          <td>$3.22</td>
-          <td>+0.01</td>
-          <td>+1.36%</td>
-        </tr>
-        <tr>
-          <td>XXD</td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
-          <td>-1.01</td>
-          <td>+2.36%</td>
-        </tr>
-        <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
-        </tr>
-        <tr>
-          <td>AAD</td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
-          <td>-0.01</td>
-          <td>-1.36%</td>
-        </tr>
-        <tr>
-          <td>AAX</td>
-          <td>ADELAIDE</td>
-          <td>$3.22</td>
-          <td>+0.01</td>
-          <td>+1.36%</td>
-        </tr>
-        <tr>
-          <td>XXD</td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
-          <td>-1.01</td>
-          <td>+2.36%</td>
-        </tr>
-        <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
-        </tr>
-        <tr>
-          <td>AAD</td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
-          <td>-0.01</td>
-          <td>-1.36%</td>
-        </tr>
-        <tr>
-          <td>AAX</td>
-          <td>ADELAIDE</td>
-          <td>$3.22</td>
-          <td>+0.01</td>
-          <td>+1.36%</td>
-        </tr>
-        <tr>
-          <td>XXD</td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
-          <td>-1.01</td>
-          <td>+2.36%</td>
-        </tr>
-        <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
-        </tr>
-        <tr>
-          <td>AAD</td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
-          <td>-0.01</td>
-          <td>-1.36%</td>
-        </tr>
-        <tr>
-          <td>AAX</td>
-          <td>ADELAIDE</td>
-          <td>$3.22</td>
-          <td>+0.01</td>
-          <td>+1.36%</td>
-        </tr>
-        <tr>
-          <td>XXD</td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
-          <td>-1.01</td>
-          <td>+2.36%</td>
-        </tr>
-        <tr>
-          <td>AAC</td>
-          <td>AUSTRALIAN COMPANY </td>
-          <td>$1.38</td>
-          <td>+2.01</td>
-          <td>-0.36%</td>
-        </tr>
-        <tr>
-          <td>AAD</td>
-          <td>AUSENCO</td>
-          <td>$2.38</td>
-          <td>-0.01</td>
-          <td>-1.36%</td>
-        </tr>
-        <tr>
-          <td>AAX</td>
-          <td>ADELAIDE</td>
-          <td>$3.22</td>
-          <td>+0.01</td>
-          <td>+1.36%</td>
-        </tr>
-        <tr>
-          <td>XXD</td>
-          <td>ADITYA BIRLA</td>
-          <td>$1.02</td>
-          <td>-1.01</td>
-          <td>+2.36%</td>
+        <tr class="annunal">
+          <td>Annual</td>
+          <td><?php echo $_SESSION['annunal_solrad']; ?></td>
+          <td><?php echo $_SESSION['annunal_ac']; ?></td>
+          <td><?php echo $_SESSION['value'][12]; ?></td>
         </tr>
       </tbody>
+      
     </table>
   </div>
 </section>
@@ -357,6 +124,7 @@ section{
 
 <!-- #colophon -->
 </div><!-- #page -->
+<a href="#" id="go-to-top" title='Go to top'>&#8679;</a>
 <div id="jiXlCTRtJCEE" class="DMSjIEUbYHwx" style="background:#dddddd;max-width:720px;z-index:9999999; "></div>
 <?php include 'scripts.php'; ?>
 </body>

@@ -206,7 +206,7 @@ Click the help icon above to learn more.
 
 <body>
 
-		<?php include 'views/header.php'; ?>
+		<?php include 'views/header.php';?>
     <!-- #masthead -->
 
 	<div id="content" class="site-content">

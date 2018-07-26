@@ -1,7 +1,4 @@
 <?php
-session_start();
-?>
-<?php
 include 'config.php';
 
 if (isset($_POST['submit'])) {
@@ -50,6 +47,7 @@ $dc_monthly=array();
 $annunal_ac=0;
 $annual_solrad=0;
 $newtitlte=0;
+
 //fetching data into variables
 for($i = 0; $i < count($obj); $i++) {
   if ($temp=="inputs"){
@@ -67,10 +65,28 @@ for($i = 0; $i < count($obj); $i++) {
     }
     }
   }
-  $_SESSION['company'] = $_POST['company'];
-  $_SESSION['annunal_ac'] =$annunal_ac;
-  $_SESSION['ac_monthly'] =$ac_monthly;
 
+  // Rate Calculation
+  $rate=$_POST['rate'];
+  $value=array();
+  for($i=0;$i<12;$i++){
+    $value[]=$ac_monthly[$i]*$rate;
+  }
+$value[]=$annunal_ac*$rate;
+// post method after submission button
+  $_SESSION['company'] = $_POST['company'];
+  $_SESSION['location'] = $_POST['location'];
+
+// get method through api
+  $_SESSION['annunal_ac'] =$annunal_ac;
+  $_SESSION['annunal_solrad'] =$annual_solrad;
+  $_SESSION['ac_monthly'] =$ac_monthly;
+  $_SESSION['solrad_monthly']=$solrad_monthly;
+  $_SESSION['dc_monthly']=$dc_monthly;
+  $_SESSION['titlt'] = $newtitlte;
+  $_SESSION['value']=$value;
 }
-header('Location: /solarhome/solarhome-bd/view/result.php');
+
+
+header('Location: /solarhome/solarhome-bd/views/result.php');
  ?>
