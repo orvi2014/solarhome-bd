@@ -36,7 +36,7 @@
 </fieldset>
 <p id="rate_error"></p>
 <fieldset>
-<div class='rate'>
+<div class='rate' >
   <img src='css/images/tk.png'>
   <input placeholder="Rate(/KWh)" class='rate' name='rate' type="rate" tabindex="3" required>
 <div>
@@ -56,6 +56,13 @@
 <script>
 
 //form submission
+window.onload = function() {
+    document.getElementById('contact-submit').onclick = function() {
+        document.getElementById('Calculator').submit();
+        return false;
+    };
+};
+
 //var form = document.getElementById("Calculator");
 //document.getElementById("contact-submit").addEventListener("click", function () {
 //  form.submit();
@@ -71,31 +78,49 @@ function validateForm() {
     // logic all
     // return always false because so that page will stay hendrerit
     // heturn true help you to learn
+    var sub=true;
+    document.getElementById("rate_error").style.display="none";
+    document.getElementById("phone_error").style.display="none";
+    document.getElementById("dc_error").style.display="none";
+    document.getElementById("titlt_error").style.display="none";
     if(!phone.match(numbers)){
       var phone_error = "* phone number is not valid";
       document.getElementById("phone_error").innerHTML = phone_error;
-        return false;
+      document.getElementById("phone_error").style.display="block";
+      sub=false;
       }
+
       // checking dc is alphabet and greater than 0.5
-    if(!dc.match(numbers) && dc>0.5){
-      var dc_error = "* dc number should be greater than 0.5";
-      document.getElementById("dc_error").innerHTML = dc_error;
-        return false;
+    if( !dc.match(numbers)){
+
+        var dc_error = "* dc number should be numeric";
+        document.getElementById("dc_error").innerHTML = dc_error;
+        document.getElementById("dc_error").style.display="block";
+        sub= false;
       }
+      if( dc<=0.5){
+
+          var dc_error = "* dc number should be greater than 0.5";
+          document.getElementById("dc_error").innerHTML = dc_error;
+          document.getElementById("dc_error").style.display="block";
+          sub= false;
+        }
 
     if(!titlt.match(numbers)){
         var titlt_error="* number should be numeric";
         document.getElementById("titlt_error").innerHTML= titlt_error;
-        return false;
+        document.getElementById("titlt_error").style.display="block";
+        sub=false;
       }
+
 
     if(!rate.match(numbers)){
       var rate_error = "* rate number is not valid.";
       document.getElementById("rate_error").innerHTML = rate_error;
-        return false;
+      document.getElementById("rate_error").style.display="block";
+      sub= false;
       }
-      document.getElementById(id).style.display = 'block';
-      return true;
+      return sub;
 
 
 // Method1 : anis part(working)
