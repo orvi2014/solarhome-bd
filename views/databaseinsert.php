@@ -6,7 +6,7 @@ include '..\controller\config.php';
 // Sytax error problem=https://www.w3schools.com/php/php_mysql_insert.asp
 //sample , result_date
 try{
-$insert_value="INSERT INTO solarhome (id, company, phone, email, location, dc, titlt, ratetype, tkrate)
+$insert_value="INSERT INTO solarhome (id, company, email, phone, location, dc, titlt, ratetype, tkrate)
 VALUES (NULL,'{$_SESSION['company']}','{$_SESSION['email']}','{$_SESSION['phone']}','{$_SESSION['location']}','{$_SESSION['dc']}','{$_SESSION['titlt']}','{$_SESSION['ratetype']}','{$_SESSION['value'][12]}')";
 
 if (mysqli_query($db, $insert_value)) {

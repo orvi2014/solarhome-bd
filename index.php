@@ -137,8 +137,7 @@ Click the help icon above to learn more.
 
 		<?php include 'views/header.php';?>
     <!-- #masthead -->
-
-	<div id="content" class="site-content">
+	<div id="content" class="site-content" style="margin-top: 20px;padding-top: 15px;">
 			<script type="text/javascript">
 				jQuery(function($){
 					$('.main-slider').bxSlider({

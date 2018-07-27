@@ -36,4 +36,6 @@ alert(html);
 }
 return false;
 }
+// contact page map api
+
 </script>
