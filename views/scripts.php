@@ -15,9 +15,14 @@ var password = document.getElementById("password").value;
 var contact = document.getElementById("contact").value;
 // Returns successful data submission message when the entered information is stored in database.
 var dataString = 'name1=' + name + '&email1=' + email + '&password1=' + password + '&contact1=' + contact;
-if (name == '' || email == '' || password == '' || contact == '') {
-alert("Please Fill All Fields");
-} else {
+if (name == '' || email == '' || password == '' || contact == '' ) {
+alert("Please Fill fukkFields");
+}
+//insert our code
+
+
+  //end our code
+else {
 // AJAX code to submit form.
 $.ajax({
 type: "POST",

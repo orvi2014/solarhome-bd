@@ -3,7 +3,7 @@
   <div class="container w3-container w3-center w3-animate-bottom">
     <!-- submit form -->
 
-
+<!-- return validate added so that we can get return value of validateForm()-->
 <form name="Calculator" id="contact" method="post" action="controller/api.php" onsubmit="return validateForm()" >
 <h3>PVI Calculator</h3>
 <fieldset>
@@ -12,15 +12,18 @@
 <fieldset>
 <input placeholder="Email Address" name="email" type="email" tabindex="2" required>
 </fieldset>
+<p id="phone_error"></p>
 <fieldset>
 <input placeholder="Phone Number" name="phone" type="phone" tabindex="3" required>
 </fieldset>
 <fieldset>
 <input placeholder="City Name" name="location" type="text" tabindex="3" required>
 </fieldset>
+<p id="dc_error"></p>
 <fieldset>
 <input placeholder="DC System Size" name="dc" type="phone" tabindex="3" min='1' required>
 </fieldset>
+<p id="titlt_error"></p>
 <fieldset>
 <input placeholder="Titlt" name="titlt" type="text" tabindex="23" required>
 </fieldset>
@@ -31,6 +34,7 @@
       <option value="Commercial">Commercial</option>
   </select>
 </fieldset>
+<p id="rate_error"></p>
 <fieldset>
 <div class='rate'>
   <img src='css/images/tk.png'>
@@ -51,33 +55,73 @@
 </section>
 <script>
 
+//form submission
+//var form = document.getElementById("Calculator");
+//document.getElementById("contact-submit").addEventListener("click", function () {
+//  form.submit();
+//});
+//Method2: orvi's part(working)
+// validating form
 function validateForm() {
     var phone = document.forms["Calculator"]["phone"].value;
     var rate = document.forms["Calculator"]["rate"].value;
     var dc = document.forms["Calculator"]["dc"].value;
+    var titlt = document.forms["Calculator"]["titlt"].value;
     var numbers = /^[0-9]+$/;
-    var phone1= phone.match(numbers);
-    var rate1 = rate.match(numbers);
-    if(dc>1){dc1=true;}else{dc1=false;}
-    //check phone
-    if(phone1){
-      if(phone1 && dc1){
-        if(phone1 && rate1){
-          return true;
-        }else{
-          alert('Fix Rate');
-          return false;
-        }
-          alert('Fix Rate');
-          return false;
-        }else{
-        alert('Fix DC');
+    // logic all
+    // return always false because so that page will stay hendrerit
+    // heturn true help you to learn
+    if(!phone.match(numbers)){
+      var phone_error = "* phone number is not valid";
+      document.getElementById("phone_error").innerHTML = phone_error;
         return false;
-        }
-      }else{
-      alert('Fix Phone no');
-      return false;
-    }
+      }
+      // checking dc is alphabet and greater than 0.5
+    if(!dc.match(numbers) && dc>0.5){
+      var dc_error = "* dc number should be greater than 0.5";
+      document.getElementById("dc_error").innerHTML = dc_error;
+        return false;
+      }
+
+    if(!titlt.match(numbers)){
+        var titlt_error="* number should be numeric";
+        document.getElementById("titlt_error").innerHTML= titlt_error;
+        return false;
+      }
+
+    if(!rate.match(numbers)){
+      var rate_error = "* rate number is not valid.";
+      document.getElementById("rate_error").innerHTML = rate_error;
+        return false;
+      }
+      document.getElementById(id).style.display = 'block';
+      return true;
+
+
+// Method1 : anis part(working)
+// var phoneValid=phone.match(numbers);
+//var rateValid=rate.match(numbers);
+//var dcValid=false;
+    //if(dc>1){dcValid=true;}
+    //check phone
+    //if(phoneValid){
+    //  if(phoneValid && dcValid){
+      //  if(phoneValid && rateValid){
+        //  return true;
+        //}else{
+        //  alert('Fix Rate');
+          //return false;
+        //}
+          //alert('Fix Rate');
+          //return false;
+        //}else{
+        //alert('Fix DC');
+        //return false;
+        //}
+      //}else{
+      //alert('Fix Phone no');
+      //return false;
+    //}
 
 
 }

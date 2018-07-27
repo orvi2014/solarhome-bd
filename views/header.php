@@ -2,12 +2,12 @@
 <div class="site-branding">
           <div class="site-logo">
                   <a href="/" rel="home">
-          <a href="" class="custom-logo-link" rel="home" itemprop="url"><img width="149" height="45" src="images/SHNlogo.png" class="custom-logo" alt="Solar Home BD" itemprop="logo" /></a>						</a>
+          <a href="" class="custom-logo-link" rel="home" itemprop="url"><img width="149" height="45" src="images/SHNlogoHalfdonelol.png" class="custom-logo" alt="Solar Home BD" itemprop="logo" /></a>						</a>
               </div>
         <div class="site-text">
     <a href="http://localhost/Solar%20Home%20Bd/" rel="home">
       <h1 class="site-title">Solar Home BD</h1>
-      <p class="site-description">Just another WordPress site</p>
+      <p class="site-description"></p>
     </a>
   </div>
 </div><!-- .site-branding -->

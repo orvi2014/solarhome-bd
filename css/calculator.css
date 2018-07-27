@@ -109,3 +109,13 @@ fieldset {
  }
 #contact input[type="ratetype"]{
 	 color: blue;}
+
+/* Error msg css */
+#phone_error, #dc_error, #titlt_error, #rate_error {
+    font: inherit;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-left: 5px;
+    padding-right: 11px;
+		color:#F90303;
+	}
