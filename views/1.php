@@ -4,10 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Solar Home BD </title>
+<title>SOLAR HOME</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Solar Home BD &raquo; Feed" href="http://localhost/Solar%20Home%20Bd/index.php/feed/" />
 <link rel='stylesheet' id='dashicons-css'  href="css/dashicons.min.css" type='text/css' media='all' />
 <link rel='stylesheet' id='edn-font-awesome-css'  href='css/font-awesome.css' type='text/css' media='all' />
 <link rel='stylesheet' id='edn-frontend-style-css'  href='css/frontend.css?ver=4.9.7' type='text/css' media='all' />
@@ -28,19 +27,6 @@
 <script type='text/javascript' src='plugin/8-degree-notification-bar/js/frontend/jquery.bxslider.min.js?ver=4.1.2'></script>
 <script type='text/javascript' src='plugin/8-degree-notification-bar/js/frontend/jquery.marquee.min.js?ver=1.0.0'></script>
 <script type='text/javascript'>
-/* <![CDATA[ */
-var ajaxsubs = {"ajaxurl":"http:\/\/localhost\/Solar%20Home%20Bd\/wp-admin\/admin-ajax.php","check_show_once":"0","control_type":"1"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='plugin/8-degree-notification-bar/js/frontend/frontend.js?ver=1.1.7'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var pf = {"spam":{"label":"I'm human!","value":"6b86e54a60"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://localhost/Solar%20Home%20Bd/wp-content/plugins/pirate-forms/public/js/custom-spam.js?ver=4.9.7'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/Solar%20Home%20Bd/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/Solar%20Home%20Bd/wp-includes/wlwmanifest.xml" />
 
 <style>.post-thumbnail img[src$='.svg'] { width: 100%; height: auto; }</style><style type='text/css' media='all'>.site-header.fixed { background: url("images/SHNlogo.png") no-repeat scroll left top; background-size: cover; }
 .site-header.fixed .header-sticky-overlay:before {
