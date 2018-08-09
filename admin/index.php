@@ -41,14 +41,14 @@ echo "Connection failed: " . $e->getMessage();
 
 <?php
 
-  $sql = "SELECT company,phone,email FROM solarhome";
+  $sql = "SELECT * FROM solarhome ORDER BY result_date ASC";
   $result=mysqli_query($db,$sql);
   $data = array();
   while ($row = mysqli_fetch_assoc($result)) {
       $data[] = $row;
     }
   $data_Size=sizeof($data);
-  echo $data_Size;
+
 // Free result set
 if(!empty($data)){
 

@@ -1,33 +1,3 @@
-<?php
-// Connecting to database
- $db = mysqli_connect('localhost','root','','solarhomexwa')
-  or die('Error connecting to MySQL server.');
-
-//mysql create good start
-$query = "SELECT * FROM solarhome";
-mysqli_query($db, $query);
-
-$result = mysqli_query($db, $query);
-$row = mysqli_fetch_array($result);
-
-
-
-// trying to insert so far so good
-// Sytax error problem=https://www.w3schools.com/php/php_mysql_insert.asp
-//$insert_value="INSERT INTO solarhome (id, company, phone, email, location, dc, titlt, ratetype, tkrate, result, result_date) VALUES (NULL, '".$_POST["company"]."','".$_POST["email"]."','".$_POST["phone"]."','".$_POST["location"]."','".$_POST["dc"]."','".$_POST["titlt"]."','".$_POST["ratetype"]."','".$_POST["rate"]."','', '')";
-
-//if (mysqli_query($db, $insert_value)) {
-
-//    echo "New record created successfully";
-//} else {
-//    echo "Error: " . $insert_value . "<br>" . mysqli_error($db);
-//}
-// Hmm. now submit button click insert into database.
-
-// closing database connection
-// no need to close now mysqli_close($db);
-?>
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -37,15 +7,18 @@ $row = mysqli_fetch_array($result);
 <title>Solar Home BD </title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Solar Home BD &raquo; Feed" href="http://localhost/Solar%20Home%20Bd/index.php/feed/" />
+<link rel='stylesheet' id='dashicons-css'  href="css/dashicons.min.css" type='text/css' media='all' />
 <link rel='stylesheet' id='edn-font-awesome-css'  href='css/font-awesome.css' type='text/css' media='all' />
 <link rel='stylesheet' id='edn-frontend-style-css'  href='css/frontend.css?ver=4.9.7' type='text/css' media='all' />
+
 <link rel='stylesheet' id='edn-google-fonts-style-css'  href='//fonts.googleapis.com/css?family=Roboto&#038;ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='eight-sec-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700italic%2C700%2C800%2C800italic%7COswald%3A400%2C300%2C700%7CRaleway%3A400%2C300%2C300italic%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800italic%2C800%2C900%2C900italic&#038;ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='bxslider-css-css'  href='css/jquery.bxslider.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='awesomse-font-css-css'  href='css/font-awesome.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='animate-css-css'  href='css/animate.css' type='text/css' media='all' />
-
-<link rel='stylesheet' id='eight-sec-style-css'  href='css/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='isotope-css-css'  href='css/isotope-docs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='eight-sec-style-css'  href='css/product.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='eight-sec-responsive-css-css'  href='css/responsive.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='calculator'  href='css/calculator.css' type='text/css' media='all' />
 <link rel="stylesheet" href="css/w3.css">
@@ -128,81 +101,76 @@ You can add your own CSS here.
 Click the help icon above to learn more.
 */
 		</style>
+
+
+
 	</head>
 
 <body>
+  <?php include 'header_result.php'; ?>
+  <section id="portfolio">
+    <div class="ed-container">
+        <div class="section-title">
+            <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">DSP30P-8</h2>
+        </div>
+    <div class="portfolio-wrap clear wow fadeInUp product" data-wow-duration="2s">
+      <img src="images\DokioSolar.png" alt = 'DSP30P-8' />
+    </div>
+    <h1>Product Specifications</h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Specifications</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          <tr>
+            <td>Maximum Power at STC (Pmax)</td>
+            <td>30Wp</td>
+          </tr>
+          <tr>
+            <td>Optimum Operating Voltage (Vmp)</td>
+            <td>18.00V</td>
 
-		<?php include 'views/header.php';?>
-    <!-- #masthead -->
-	<div id="content" class="site-content" style="margin-top: 20px;padding-top: 15px;">
-			<script type="text/javascript">
-				jQuery(function($){
-					$('.main-slider').bxSlider({
-								pager: true,
-								controls: true,
-								mode: 'fade',
-								auto : true
-							});
-				});
-			</script>
-			<!--slider -->
-      <?php include 'views/slider.php' ?>
+          </tr>
+          <tr>
+            <td>Optimum Operating Current (Imp)</td>
+            <td>1.67A</td>
 
-		<!-- end of slider section -->
+          </tr>
+          <tr>
+            <td>Open-Circuit Voltage (Voc)</td>
+            <td>22.50V</td>
 
-<!-- about section -->
-		<?php include 'views/about.php' ?>
-		<!-- end of portfolio section -->
+          </tr>
+          <tr>
+            <td>Short-Circuit Current (Isc)</td>
+            <td>1.92A</td>
+
+          </tr>
+          <tr>
+            <td>Dimensions (L×W×H)</td>
+            <td>640×350×25mm</td>
+          </tr>
+          <tr>
+            <td>Cell Type</td>
+            <td>Polycrystalline（156mm）</td>
+          </tr>
+        </tbody>
+
+      </table>
+      <h2>To download details click <a href="pdf/dokio/DSP30P-8.pdf" target="_blank">here</a></h2>
+    </div>
+
+  </section>
 
 
-<!-- calculator section -->
-
-<?php include 'views/calculator.php' ?>
-		<!-- end of calculator section -->
-
-<!-- portfolio section -->
-<?php include 'views/portfolio.php' ?>
-	<!-- end of portfolio section -->
-
-<!-- blog section -->
-
-<!-- testimonial section -->
-		<!-- end of testimonial section -->
-
-<!-- contact section -->
-		<?php include 'views/contact.php' ?>
-
-<!-- end of contact section -->
-
-</div><!-- #content -->
-<!--footer-->
-<?php include 'views/footer.php'; ?>
-
-<!-- #colophon -->
-</div><!-- #page -->
-<a href="#" id="go-to-top" title='Go to top'>&#8679;</a>
-<div id="jiXlCTRtJCEE" class="DMSjIEUbYHwx" style="background:#dddddd;max-width:720px;z-index:9999999; "></div>
-<?php include 'views/scripts.php' ?>
-
-<script>
-var modal = document.querySelector(".modal");
-    var trigger = document.querySelector(".trigger");
-    var closeButton = document.querySelector(".close-button");
-
-    function toggleModal() {
-        modal.classList.toggle("show-modal");
-    }
-
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
-        }
-    }
-
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-</script>
+  <?php include 'footer.php'; ?>
 </body>
-
 </html>

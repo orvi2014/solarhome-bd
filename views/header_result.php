@@ -21,8 +21,8 @@
   </div>
               <ul class="nav plx_nav menu">
                   <span class="siteurl" url="" style="display: none;"></span>
-          <li class="eight_sec_menu menu-item" id="eight_sec_slider"><a  href="#slider">HOME</a></li>
-                                          <li class="eight_sec_menu menu-item" id="eight_sec_menu_about"><a class='menu_about_section'  href="#portfolio" >Products</a></li>
+          <li class="eight_sec_menu menu-item" id="eight_sec_slider"><a  href="../index.php#slider">HOME</a></li>
+                                          <li class="eight_sec_menu menu-item" id="eight_sec_menu_about"><a class='menu_about_section'  href="../index.php#portfolio" >Products</a></li>
                                                                       <li class="eight_sec_menu menu-item" id="eight_sec_menu_portfolio"><a class='menu_portfolio_section'  href="#projects" >Projects</a></li>
                                                                       <li class="eight_sec_menu menu-item" id="eight_sec_menu_portfolio"><a class='menu_portfolio_section'  href="#team" >PVI Calculator</a></li>
                                                                       <li class="eight_sec_menu menu-item" id="eight_sec_menu_contact"><a class='menu_contact_section' href="#contact-us" >CONTACT US</a></li>

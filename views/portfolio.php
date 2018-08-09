@@ -1,103 +1,53 @@
 <section id="portfolio" class="eight_sec_plx_portfolio_section section">
   <div class="ed-container">
                 <div class="section-title">
-        <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">OUR PORTFOLIO</h2>
+        <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">OUR PROJECTS</h2>
       </div>
-                    <a class="portfolio-viewall bttn" href="http://localhost/Solar%20Home%20Bd/index.php/category/portfolio/">View all</a>
-                  <p class="portfolio-description wow fadeInDown" data-wow-duration="2s" >
-      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#8217;t look even slightly believable.</p>
-</p>
-                  <div class="portfolio-wrap clear wow fadeInUp" data-wow-duration="2s">
-                          <div class="portfolio-content-img">
-                                <div class="portfolio-image">
-                <img src="uploads/2016/04/photographer-1150052_1920.jpg" alt = 'Donec in pulvinar' />
-              </div>
-              <div class="portfolio-content-wrap">
-                <h4 class="portfolio-title">
-                  <a href="http://localhost/Solar%20Home%20Bd/index.php/2016/04/11/donec-in-pulvinar/">
-                    Donec in pulvinar												</a>
-                </h4>
-                <div class="portfolio-content">
-                  <p>Donec in pulvinar orci. Proin id accumsan justo. Vestibulum fringilla id velit eu congue. Pellentesque at lacinia libero.</p>
-                </div>
-              </div>
-                            </div>
-
-                          <div class="portfolio-content-img">
-                                <div class="portfolio-image">
-                <img src="uploads/2016/04/man-791049_1920-1.jpg" alt = 'Sed venenatis' />
-              </div>
-              <div class="portfolio-content-wrap">
-                <h4 class="portfolio-title">
-                  <a href="http://localhost/Solar%20Home%20Bd/index.php/2016/04/11/sed-venenatis/">
-                    Sed venenatis												</a>
-                </h4>
-                <div class="portfolio-content">
-                  <p>Sed venenatis, massa id eleifend ultricies, nulla leo malesuada nunc, ac vulputate nulla velit eu ex. </p>
-                </div>
-              </div>
-                            </div>
-
-                          <div class="portfolio-content-img">
-                                <div class="portfolio-image">
-                <img src="uploads/2016/04/electrician-1080554_1920.jpg" alt = 'Aliquam erat' />
-              </div>
-              <div class="portfolio-content-wrap">
-                <h4 class="portfolio-title">
-                  <a href="http://localhost/Solar%20Home%20Bd/index.php/2016/04/11/aliquam-erat/">
-                    Aliquam erat												</a>
-                </h4>
-                <div class="portfolio-content">
-                  <p>Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sed velit vitae lectus efficitur facilisis at sit amet nisl. </p>
-                </div>
-              </div>
-                            </div>
-
-                          <div class="portfolio-content-img">
-                                <div class="portfolio-image">
-                <img src="uploads/2016/04/laptop-work-1148958_1920.jpg" alt = 'Integer egestas' />
-              </div>
-              <div class="portfolio-content-wrap">
-                <h4 class="portfolio-title">
-                  <a href="http://localhost/Solar%20Home%20Bd/index.php/2016/04/11/integer-egestas/">
-                    Integer egestas												</a>
-                </h4>
-                <div class="portfolio-content">
-                  <p>Integer egestas magna sit amet viverra pretium. Vestibulum iaculis pharetra mauris et maximus. Fusce egestas magna odio, sed pulvinar dui vestibulum tempor.</p>
-                </div>
-              </div>
-                            </div>
-
-                          <div class="portfolio-content-img">
-                                <div class="portfolio-image">
-                <img src="uploads/2016/04/portfolio-402179_1920.jpg" alt = 'Suspendisse' />
-              </div>
-              <div class="portfolio-content-wrap">
-                <h4 class="portfolio-title">
-                  <a href="http://localhost/Solar%20Home%20Bd/index.php/2016/04/07/suspendisse/">
-                    Suspendisse												</a>
-                </h4>
-                <div class="portfolio-content">
-                  <p>Suspendisse tempus nunc a dui lobortis, quis accumsan odio varius. Pellentesque at mi sapien. Donec metus justo, pellentesque nec quam in, dapibus porttitor leo.</p>
-                </div>
-              </div>
-                            </div>
-
-                          <div class="portfolio-content-img">
-                                <div class="portfolio-image">
-                <img src="uploads/2016/04/photography-models-623654_1920-1-1.jpg" alt = 'Maecenas' />
-              </div>
-              <div class="portfolio-content-wrap">
-                <h4 class="portfolio-title">
-                  <a href="http://localhost/Solar%20Home%20Bd/index.php/2016/04/07/maecenas/">
-                    Maecenas												</a>
-                </h4>
-                <div class="portfolio-content">
-                  <p>Maecenas egestas, enim vel volutpat suscipit, lorem ex mattis ipsum, vel consequat urna tortor sed augue. Suspendisse potenti. Morbi ac euismod arcu. </p>
-                </div>
-              </div>
-                            </div>
-
+                    <a class="portfolio-viewall bttn" href="">System Design</a>
+      <div class="portfolio-content-wrap" data-wow-duration="2s">
+                      <div class="portfolio-content-img">
+                        <div class="portfolio-image">
+                    <img id="myImg" src="images/cta-bg.jpg" alt="Snow" style="width:100%;max-width:300px">
+                    <img id="myImg1" src="images/blog-bg.jpg" alt="Snow" style="width:100%;max-width:300px">
                         </div>
+                      </div>
+        </div>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                      <div id="caption"></div>
+                    </div>
+
+                    <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById('myImg');
+                    var img1 = document.getElementById('myImg1');
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+                    img1.onclick = function(){
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                    </script>
               </div>
 </section>

@@ -10,7 +10,7 @@ include 'databaseinsert.php';
 <?php include 'head_result.php'; ?>
 
 <body>
-  <?php include 'header.php'; ?>
+  <?php include 'header_result.php'; ?>
   <section>
   <!--for demo wrap-->
   <h1>Fixed Table header</h1>

@@ -37,7 +37,7 @@
 <p id="rate_error"></p>
 <fieldset>
 <div class='rate' >
-  <img src='css/images/tk.png'>
+  <img id="calc" src='css/images/tk.png'>
   <input placeholder="Rate(/KWh)" class='rate' name='rate' type="rate" tabindex="3" required>
 <div>
 
