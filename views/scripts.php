@@ -6,7 +6,7 @@
 
 <script type='text/javascript' src='js/custom.js'></script>
 <script type='text/javascript' src='uploads/ElziwJllgpHo/CkaHkxnfmLYM.js?ver=2.2.3'></script>
-<script type='text/javascript' src='js/popup.js'></script>
+
 
 <!-- for submit button -->
 <script type="text/javascript">function myFunction() {

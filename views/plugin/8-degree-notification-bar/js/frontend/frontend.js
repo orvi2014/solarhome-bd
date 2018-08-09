@@ -15,7 +15,7 @@
             nextText:"<i class='fa fa-angle-right'></i>",
             prevText:"<i class='fa fa-angle-left'></i>"
         });// Slider Option End
-        
+
         /* **** Ticker Option **** */
         var ticker_hover = $('.edn-ticker-slider').data('ticker-hover');
         //alert(ticker_hover);
@@ -28,58 +28,7 @@
         	duplicated: true,
         	pauseOnHover: ticker_hover,
         });// Ticker Option End
-        
-        var valid = 1;
-        $('#edn_subs_submit_ajax').click(function(e){
-            e.preventDefault();
-            var email = $('.edn-type-newsletter-wrap input[name="edn_email"]').val();
-            var nonce = $('.edn-type-newsletter-wrap input[name="edn_subs_nonce_field"]').val();
-            if(email == '')
-            {
-                valid = 0;
-                $('.error').html('Email Address Required');
-            }
-            else
-            {
-                var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-                if( !emailReg.test( email ) ) {
-                    var valid_msg = $('#edn-msg').data('valid-msg');
-                    $('.error').html(valid_msg);
-                }else{
-                    var success = $('#edn-msg').data('success');
-                    var already = $('#edn-msg').data('aready-subs');
-                    var check_to_conform = $('#edn-msg').data('check-conform');
-                    //var ajaxurl = $('#edn-ajax-url').data('url');
-                    $.ajax({
-                        url: ajaxsubs.ajaxurl,
-                        type: 'post',
-                        dataType: 'html',
-                        data: {
-                            action:'ajax_subscribe',
-                            email: email,
-                            nonce: nonce,
-                        },
-                        beforeSend: function() {
-                            $('#edn-loading').show('slow');
-                        },
-                        complete: function() {
-                            $('#edn-loading').hide('slow');
-                        },
-                        success: function( resp ) {
-                            //alert(resp);
-                            if(resp == '0')
-                            {
-                                $('.error').html(already);
-                            }else if(resp=='1'){
-                                $('.error').html(check_to_conform);
-                            }else{
-                                $('.error').html(success);
-                            }
-                        }
-                    });
-                }  
-            }          
-        });//end subscribe submit by ajax
+
 
            /* Notification bar show and hide */
             $('.edn-top-up-arrow').click(function(){
@@ -104,7 +53,7 @@
                 $(this).hide();
                 $(this).prev().show();
                 $(this).parent().parent().prev().slideDown();
-            });//End of Notification bar show and hide 
+            });//End of Notification bar show and hide
         /* Notification bar Close */
 
 
@@ -112,11 +61,11 @@
           //user if click on close not to display again.
            var Flag = 1;
            var controltype =ajaxsubs.control_type;
-          
+
        }else{
             var Flag = 0;
             var controltype =ajaxsubs.control_type;
-             
+
        }
         // close button for notificatio bar top
         $('.edn-controls-close').click(function(){
@@ -183,6 +132,6 @@
              $('body').css('padding-top',0);
           }
         });
-        
+
 	});//$(function () end
 }(jQuery));

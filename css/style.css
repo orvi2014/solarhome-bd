@@ -785,29 +785,6 @@ object {
 }
 
 /*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
-.wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
-}
-
-.wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
-}
-
-.wp-caption-text {
-	text-align: center;
-	line-height: initial;
-}
-
-/*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
@@ -1730,16 +1707,16 @@ MAIN SLIDER
     top: 50%;
     z-index: 1;
 }
-.eight_sec_plx_slider_section .slide-caption .caption-title {
-    color: #fff;
+.eight_sec_plx_slider_section .slide-caption .pv-title {
+    color: #d95c5c;
     font-size: 4em;
     font-weight: 700;
     margin: 0;
     position: relative;
 }
-.eight_sec_plx_slider_section .slide-caption .caption-title:after {
+.eight_sec_plx_slider_section .slide-caption .pv-title:after {
 	content: "";
-	background: #fff;
+	background: #d95c5c;
 	height: 2px;
 	width: 20%;
 	position: absolute;
@@ -1750,6 +1727,7 @@ MAIN SLIDER
 }
 .eight_sec_plx_slider_section .slide-caption .slide-content {
     color: #fff;
+		padding-top: 10px;
 }
 .eight_sec_plx_slider_section .slide-caption .slide-content p {
    font-family: open sans;

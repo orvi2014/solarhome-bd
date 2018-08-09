@@ -7,25 +7,35 @@
 <form name="Calculator" id="contact" method="post" action="controller/api.php" onsubmit="return validateForm()" >
 <h3>PVI Calculator</h3>
 <fieldset>
-<input placeholder="Company Name" name="company" type="text" tabindex="1" required autofocus>
+<input placeholder="Company Name" name="company" type="text" tabindex="3" required autofocus>
 </fieldset>
 <fieldset>
-<input placeholder="Email Address" name="email" type="email" tabindex="2" required>
+<input placeholder="Email Address" name="email" type="email" tabindex="3" required>
 </fieldset>
-<p id="phone_error"></p>
 <fieldset>
+<div id="phone_error"></div>
 <input placeholder="Phone Number" name="phone" type="phone" tabindex="3" required>
 </fieldset>
 <fieldset>
-<input placeholder="City Name" name="location" type="text" tabindex="3" required>
+
+<select type="ratetype" name="location" required>
+      <option value="Dhaka" >Dhaka</option>
+      <option value="Chittagong">Chittagong</option>
+      <option value="Comilla">Comilla</option>
+      <option value="Sylhet">Sylhet</option>
+      <option value="Rajshahi">Rajshahi</option>
+      <option value="Barisal">Basrisal</option>
+      <option value="Khulna">Khulna</option>
+      <option value="Rangpur">Rangpur</option>
+  </select>
 </fieldset>
-<p id="dc_error"></p>
+<div id="dc_error"></div>
 <fieldset>
 <input placeholder="DC System Size" name="dc" type="phone" tabindex="3" min='1' required>
 </fieldset>
-<p id="titlt_error"></p>
+<div id="titlt_error"></div>
 <fieldset>
-<input placeholder="Titlt" name="titlt" type="text" tabindex="23" required>
+<input placeholder="Titlt" name="titlt" type="text" tabindex="23">
 </fieldset>
 <fieldset>
 
@@ -34,7 +44,7 @@
       <option value="Commercial">Commercial</option>
   </select>
 </fieldset>
-<p id="rate_error"></p>
+<div id="rate_error"></div>
 <fieldset>
 <div class='rate' >
   <img id="calc" src='css/images/tk.png'>

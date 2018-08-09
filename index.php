@@ -32,7 +32,7 @@ $row = mysqli_fetch_array($result);
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 
 <title>Solar Home BD </title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
@@ -60,14 +60,7 @@ var ajaxsubs = {"ajaxurl":"http:\/\/localhost\/Solar%20Home%20Bd\/wp-admin\/admi
 /* ]]> */
 </script>
 <script type='text/javascript' src='plugin/8-degree-notification-bar/js/frontend/frontend.js?ver=1.1.7'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var pf = {"spam":{"label":"I'm human!","value":"6b86e54a60"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://localhost/Solar%20Home%20Bd/wp-content/plugins/pirate-forms/public/js/custom-spam.js?ver=4.9.7'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/Solar%20Home%20Bd/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/Solar%20Home%20Bd/wp-includes/wlwmanifest.xml" />
+
 
 <style>.post-thumbnail img[src$='.svg'] { width: 100%; height: auto; }</style><style type='text/css' media='all'>.site-header.fixed { background: url("images/SHNlogo.png") no-repeat scroll left top; background-size: cover; }
 .site-header.fixed .header-sticky-overlay:before {
