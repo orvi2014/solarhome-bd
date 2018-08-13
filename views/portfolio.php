@@ -7,8 +7,8 @@
       <div class="portfolio-content-wrap" data-wow-duration="2s">
                       <div class="portfolio-content-img">
                         <div class="portfolio-image">
-                    <img id="myImg" src="images/cta-bg.jpg" alt="Snow" style="width:100%;max-width:300px">
-                    <img id="myImg1" src="images/blog-bg.jpg" alt="Snow" style="width:100%;max-width:300px">
+                    <img id="myImg" src="images/ZR Solar.jpg" alt="Snow" style="width:100%;max-width:300px">
+                    <img id="myImg1" src="images/ZR Solar.jpg" alt="Snow" style="width:100%;max-width:300px">
                         </div>
                       </div>
         </div>

@@ -31,82 +31,82 @@ include 'databaseinsert.php';
       <tbody>
         <tr>
           <td>January</td>
-          <td><?php echo $_SESSION['solrad_monthly'][0]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][0]; ?></td>
-          <td><?php echo $_SESSION['value'][0]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][0]);  ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][0]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][0]); ?></td>
 
         </tr>
         <tr>
           <td>February</td>
-          <td><?php echo $_SESSION['solrad_monthly'][1]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][1]; ?></td>
-          <td><?php echo $_SESSION['value'][1]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][1]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][1]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][1]); ?></td>
         </tr>
         <tr>
           <td>March</td>
-            <td><?php echo $_SESSION['solrad_monthly'][2]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][2]; ?></td>
-          <td><?php echo $_SESSION['value'][2]; ?></td>
+            <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][2]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][2]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][2]); ?></td>
         </tr>
         <tr>
           <td>April</td>
-          <td><?php echo $_SESSION['solrad_monthly'][3]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][3]; ?></td>
-          <td><?php echo $_SESSION['value'][3]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][3]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][3]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][3]); ?></td>
         </tr>
         <tr>
           <td>May</td>
-            <td><?php echo $_SESSION['solrad_monthly'][4]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][4]; ?> </td>
-          <td><?php echo $_SESSION['value'][4]; ?></td>
+            <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][4]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][4]); ?> </td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][4]); ?></td>
         </tr>
         <tr>
           <td>June</td>
-          <td><?php echo $_SESSION['solrad_monthly'][5]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][5]; ?></td>
-          <td><?php echo $_SESSION['value'][5]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][5]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][5]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][5]); ?></td>
         </tr>
         <tr>
           <td>July</td>
-          <td><?php echo $_SESSION['solrad_monthly'][6]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][6]; ?></td>
-          <td><?php echo $_SESSION['value'][6]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][6]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][6]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][6]); ?></td>
         </tr>
         <tr>
           <td>August</td>
-          <td><?php echo $_SESSION['solrad_monthly'][7]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][7]; ?></td>
-          <td><?php echo $_SESSION['value'][7]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][7]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][7]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][7]); ?></td>
         </tr>
         <tr>
           <td>September</td>
-          <td><?php echo $_SESSION['solrad_monthly'][8]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][8]; ?></td>
-          <td><?php echo $_SESSION['value'][8]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][8]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][8]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][8]); ?></td>
         </tr>
         <tr>
           <td>Octobor</td>
-          <td><?php echo $_SESSION['solrad_monthly'][9]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][9]; ?></td>
-          <td><?php echo $_SESSION['value'][9]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][9]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][9]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][9]); ?></td>
         </tr>
         <tr>
           <td>November</td>
-          <td><?php echo $_SESSION['solrad_monthly'][10]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][10]; ?></td>
-          <td><?php echo $_SESSION['value'][10]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][10]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][10]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][10]); ?></td>
         </tr>
         <tr>
           <td>December</td>
-          <td><?php echo $_SESSION['solrad_monthly'][11]; ?></td>
-          <td><?php echo $_SESSION['ac_monthly'][11]; ?></td>
-          <td><?php echo $_SESSION['value'][11]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['solrad_monthly'][11]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['ac_monthly'][11]); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][11]); ?></td>
         </tr>
         <tr class="annunal">
           <td>Annual</td>
-          <td><?php echo $_SESSION['annunal_solrad']; ?></td>
-          <td><?php echo $_SESSION['annunal_ac']; ?></td>
-          <td><?php echo $_SESSION['value'][12]; ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['annunal_solrad']); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['annunal_ac']); ?></td>
+          <td><?php echo sprintf("%.02f",$_SESSION['value'][12]); ?></td>
         </tr>
       </tbody>
 

@@ -2,7 +2,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Solar Home BD </title>
+<title>📈 My title</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Solar Home BD &raquo; Feed" href="http://localhost/Solar%20Home%20Bd/index.php/feed/" />

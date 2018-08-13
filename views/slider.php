@@ -3,7 +3,7 @@
               <li class="slide" style="background: url('uploads/slider1-1.jpg') center no-repeat; background-size: 100% auto;">
       <div class="slide-caption">
         <div class="ed-container">
-          <h2 class="pv-title">Calculate Your PV System</h2>
+          <h2 class="pv-title animated fadeInUp">Calculate Your PV System</h2>
           <div class="slide-content">
                                 <a href="#team" class="slide-readmore bttn">Get Started</a>
                             </div>
@@ -14,7 +14,7 @@
               <li class="slide" style="background: url('uploads/slider2-1.jpg') center no-repeat; background-size: 100% auto;">
       <div class="slide-caption">
         <div class="ed-container">
-          <h2 class="pv-title">Calculate Your PV System</h2>
+          <h2 class="pv-title animated fadeInUp " style="color:#FFF;">Calculate Your PV System</h2>
           <div class="slide-content">
                                 <a href="#team" class="slide-readmore bttn">Get Started</a>
                             </div>
@@ -23,10 +23,10 @@
 
     </li>
     <!--3rd slider -->
-    <li class="slide" style="background: url('uploads/slider3-1.png') center no-repeat; background-size: 100% auto;">
+    <li class="slide" style="background: url('uploads/slider3-1.jpg') center no-repeat; background-size: 100% auto;">
 <div class="slide-caption">
   <div class="ed-container">
-    <h2 class="pv-title">Calculate Your PV System</h2>
+    <h2 class="pv-title animated fadeInUp">Calculate Your PV System</h2>
     <div class="slide-content">
                           <a href="#team" class="slide-readmore bttn">Get Started</a>
                       </div>
