@@ -97,10 +97,10 @@ Click the help icon above to learn more.
   <section id="portfolio">
     <div class="ed-container">
         <div class="section-title">
-            <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">Single Phase TLM Series</h2>
+            <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">Three Phase 50-70TL Series</h2>
         </div>
     <div class="portfolio-wrap clear wow fadeInUp product" data-wow-duration="2s">
-      <img src="images\Inverter1.JPG" alt = 'SP TLM_Series' />
+      <img src="images\Inverter8.JPG" alt = 'SP KTLM_Series' />
     </div>
     <h1>Product Specifications</h1>
     <div class="tbl-header">
@@ -108,12 +108,9 @@ Click the help icon above to learn more.
         <thead>
           <tr>
             <th>Description</th>
-            <th> 3000TLM</th>
-            <th> 3680TLM</th>
-            <th> 4000TLM</th>
-            <th> 4600TLM</th>
-            <th> 5000TLM</th>
-            <th> 6000TLM</th>
+            <th>50000TL</th>
+            <th>60000TL</th>
+            <th>70000TL-HV</th>
           </tr>
         </thead>
       </table>
@@ -123,72 +120,50 @@ Click the help icon above to learn more.
         <tbody>
           <tr>
             <td>Maximum Input Power (DC)</td>
-            <td>3300W</td>
-            <td>4000W</td>
-            <td>4400W</td>
-            <td>5000W</td>
-            <td>5500W</td>
-            <td>6000W</td>
+            <td>55000W</td>
+            <td>66000W</td>
+            <td>77000W</td>
           </tr>
           <tr>
             <td>Rated Output Power (AC)</td>
-            <td>3000W</td>
-            <td>3680W</td>
-            <td>4000W</td>
-            <td>4600W</td>
-            <td>5000W</td>
-            <td>6000W</td>
+            <td>50000W</td>
+            <td>60000W</td>
+            <td>70000W</td>
           </tr>
           <tr>
             <td>MPPT Voltage Range (DC)</td>
-            <td>80-580V</td>
-            <td>100-580V</td>
-            <td>100-580V</td>
-            <td>100-580V</td>
-            <td>100-580V</td>
-            <td>100-580V</td>
+            <td>250-960V</td>
+            <td>250-960V</td>
+            <td>250-960V</td>
           </tr>
           <tr>
             <td>Grid Voltage Range (AC)</td>
-            <td>180~270V</td>
-            <td>180~270V</td>
-            <td>180~270V</td>
-            <td>180~270V</td>
-            <td>180~270V</td>
-            <td>180~270V</td>
-
+            <td>180Vac-270Vac</td>
+            <td>180Vac-270Vac</td>
+            <td>245Vac-305Vac</td>
           </tr>
           <tr>
             <td>Grid Connection Type</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
+            <td>Three Phase</td>
+            <td>Three Phase</td>
+            <td>Three Phase</td>
           </tr>
           <tr>
             <td>Maximum Efficiency</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
+            <td>98.5%</td>
+            <td>98.6%</td>
+            <td>98.6%</td>
           </tr>
           <tr>
             <td>Dimensions (mm)</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
+            <td>737*713*297 mm</td>
+            <td>737*713*297 mm</td>
+            <td>737*713*297 mm</td>
           </tr>
         </tbody>
 
       </table>
-      <h2>To download details click <a href="pdf/Inverter/2___SP_TLM_3000TLM, 3680TLM, 4000TLM, 4600TLM, 5000TLM, 6000TLM.pdf" target="_blank">here</a></h2>
+      <h2>To download details click <a href="pdf/Inverter/8___TP_50000TL, 60000TL, 70000TL-HV.pdf" target="_blank">here</a></h2>
     </div>
 
   </section>

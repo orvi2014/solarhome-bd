@@ -100,7 +100,7 @@ Click the help icon above to learn more.
             <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">Single Phase KTLM Series</h2>
         </div>
     <div class="portfolio-wrap clear wow fadeInUp product" data-wow-duration="2s">
-      <img src="images\DokioSolar.png" alt = 'SP KTLM_Series' />
+      <img src="images\Inverter3.JPG" alt = 'SP KTLM_Series' />
     </div>
     <h1>Product Specifications</h1>
     <div class="tbl-header">
@@ -195,7 +195,7 @@ Click the help icon above to learn more.
         </tbody>
 
       </table>
-      <h2>To download details click <a href="pdf/dokio/DSP30P-8.pdf" target="_blank">here</a></h2>
+      <h2>To download details click <a href="pdf/Inverter/3___SP_KTLM_3KTLM-G2, 3.6KTLM-G2, 4KTLM-G2, 4.6KTLM-G2, 5KTLMG2, 6KTLM-G2, 7.5KTLM-G2.pdf" target="_blank">here</a></h2>
     </div>
 
   </section>

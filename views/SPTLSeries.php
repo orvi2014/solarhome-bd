@@ -100,7 +100,7 @@ Click the help icon above to learn more.
             <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">Single Phase TL Series</h2>
         </div>
     <div class="portfolio-wrap clear wow fadeInUp product" data-wow-duration="2s">
-      <img src="images\DokioSolar.png" alt = 'SP TL_Series' />
+      <img src="images\Inverter1.JPG" alt = 'SP TL_Series' />
     </div>
     <h1>Product Specifications</h1>
     <div class="tbl-header">
@@ -181,7 +181,7 @@ Click the help icon above to learn more.
         </tbody>
 
       </table>
-      <h2>To download details click <a href="pdf/dokio/DSP30P-8.pdf" target="_blank">here</a></h2>
+      <h2>To download details click <a href="pdf/Inverter/1___SP_TL_Series_1100TL, 1600TL, 2200TL, 2700TL, 3000TL.pdf" target="_blank">here</a></h2>
     </div>
 
   </section>

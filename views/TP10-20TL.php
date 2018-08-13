@@ -97,10 +97,10 @@ Click the help icon above to learn more.
   <section id="portfolio">
     <div class="ed-container">
         <div class="section-title">
-            <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">Single Phase TLM Series</h2>
+            <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">Three Phase 10-20TL Series</h2>
         </div>
     <div class="portfolio-wrap clear wow fadeInUp product" data-wow-duration="2s">
-      <img src="images\Inverter1.JPG" alt = 'SP TLM_Series' />
+      <img src="images\Inverter5.JPG" alt = 'SP KTLM_Series' />
     </div>
     <h1>Product Specifications</h1>
     <div class="tbl-header">
@@ -108,12 +108,10 @@ Click the help icon above to learn more.
         <thead>
           <tr>
             <th>Description</th>
-            <th> 3000TLM</th>
-            <th> 3680TLM</th>
-            <th> 4000TLM</th>
-            <th> 4600TLM</th>
-            <th> 5000TLM</th>
-            <th> 6000TLM</th>
+            <th>10000TL</th>
+            <th>15000TL</th>
+            <th>17000TL</th>
+            <th>20000TL</th>
           </tr>
         </thead>
       </table>
@@ -123,30 +121,24 @@ Click the help icon above to learn more.
         <tbody>
           <tr>
             <td>Maximum Input Power (DC)</td>
-            <td>3300W</td>
-            <td>4000W</td>
-            <td>4400W</td>
-            <td>5000W</td>
-            <td>5500W</td>
-            <td>6000W</td>
+            <td>11000W</td>
+            <td>16500W</td>
+            <td>18700W</td>
+            <td>22000W</td>
           </tr>
           <tr>
             <td>Rated Output Power (AC)</td>
-            <td>3000W</td>
-            <td>3680W</td>
-            <td>4000W</td>
-            <td>4600W</td>
-            <td>5000W</td>
-            <td>6000W</td>
+            <td>10000W</td>
+            <td>15000W</td>
+            <td>17000W</td>
+            <td>20000W</td>
           </tr>
           <tr>
             <td>MPPT Voltage Range (DC)</td>
-            <td>80-580V</td>
-            <td>100-580V</td>
-            <td>100-580V</td>
-            <td>100-580V</td>
-            <td>100-580V</td>
-            <td>100-580V</td>
+            <td>250-960V</td>
+            <td>250-960V</td>
+            <td>250-960V</td>
+            <td>250-960V</td>
           </tr>
           <tr>
             <td>Grid Voltage Range (AC)</td>
@@ -154,41 +146,33 @@ Click the help icon above to learn more.
             <td>180~270V</td>
             <td>180~270V</td>
             <td>180~270V</td>
-            <td>180~270V</td>
-            <td>180~270V</td>
-
           </tr>
           <tr>
             <td>Grid Connection Type</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
-            <td>Single Phase</td>
+            <td>Three Phase</td>
+            <td>Three Phase</td>
+            <td>Three Phase</td>
+            <td>Three Phase</td>
           </tr>
           <tr>
             <td>Maximum Efficiency</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
-            <td>97.6%</td>
+            <td>98.2%</td>
+            <td>98.2%</td>
+            <td>98.2%</td>
+            <td>98.2%</td>
+
           </tr>
           <tr>
             <td>Dimensions (mm)</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
-            <td>344*478*170 mm</td>
+            <td>707*492*240 mm</td>
+            <td>707*492*240 mm</td>
+            <td>707*492*240 mm</td>
+            <td>707*492*240 mm</td>
           </tr>
         </tbody>
 
       </table>
-      <h2>To download details click <a href="pdf/Inverter/2___SP_TLM_3000TLM, 3680TLM, 4000TLM, 4600TLM, 5000TLM, 6000TLM.pdf" target="_blank">here</a></h2>
+      <h2>To download details click <a href="pdf/Inverter/5___TP_10000TL, 15000TL, 17000TL, 20000TL.pdf" target="_blank">here</a></h2>
     </div>
 
   </section>
