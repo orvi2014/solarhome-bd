@@ -1,55 +1,23 @@
-<?php
-// Connecting to database
- $db = mysqli_connect('localhost','root','','solarhomexwa')
-  or die('Error connecting to MySQL server.');
-
-//mysql create good start
-$query = "SELECT * FROM solarhome";
-mysqli_query($db, $query);
-
-$result = mysqli_query($db, $query);
-$row = mysqli_fetch_array($result);
-
-
-
-// trying to insert so far so good
-// Sytax error problem=https://www.w3schools.com/php/php_mysql_insert.asp
-//$insert_value="INSERT INTO solarhome (id, company, phone, email, location, dc, titlt, ratetype, tkrate, result, result_date) VALUES (NULL, '".$_POST["company"]."','".$_POST["email"]."','".$_POST["phone"]."','".$_POST["location"]."','".$_POST["dc"]."','".$_POST["titlt"]."','".$_POST["ratetype"]."','".$_POST["rate"]."','', '')";
-
-//if (mysqli_query($db, $insert_value)) {
-
-//    echo "New record created successfully";
-//} else {
-//    echo "Error: " . $insert_value . "<br>" . mysqli_error($db);
-//}
-// Hmm. now submit button click insert into database.
-
-// closing database connection
-// no need to close now mysqli_close($db);
-?>
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Solar Home BD </title>
-<<<<<<< HEAD
-=======
-<link rel="shortcut icon" type="image/x-icon" href="images/SHNlogo.png" />
->>>>>>> 3b03daa5faa0af2d6862d3e19805b2af826d1aeb
+<title>SOLAR HOME</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='dashicons-css'  href="css/dashicons.min.css" type='text/css' media='all' />
 <link rel='stylesheet' id='edn-font-awesome-css'  href='css/font-awesome.css' type='text/css' media='all' />
 <link rel='stylesheet' id='edn-frontend-style-css'  href='css/frontend.css?ver=4.9.7' type='text/css' media='all' />
+
 <link rel='stylesheet' id='edn-google-fonts-style-css'  href='//fonts.googleapis.com/css?family=Roboto&#038;ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='eight-sec-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700italic%2C700%2C800%2C800italic%7COswald%3A400%2C300%2C700%7CRaleway%3A400%2C300%2C300italic%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800italic%2C800%2C900%2C900italic&#038;ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='bxslider-css-css'  href='css/jquery.bxslider.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='awesomse-font-css-css'  href='css/font-awesome.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='animate-css-css'  href='css/animate.css' type='text/css' media='all' />
-
-<link rel='stylesheet' id='eight-sec-style-css'  href='css/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='isotope-css-css'  href='css/isotope-docs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='eight-sec-style-css'  href='css/product.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='eight-sec-responsive-css-css'  href='css/responsive.css?ver=4.9.7' type='text/css' media='all' />
 <link rel='stylesheet' id='calculator'  href='css/calculator.css' type='text/css' media='all' />
 <link rel="stylesheet" href="css/w3.css">
@@ -59,16 +27,6 @@ $row = mysqli_fetch_array($result);
 <script type='text/javascript' src='plugin/8-degree-notification-bar/js/frontend/jquery.bxslider.min.js?ver=4.1.2'></script>
 <script type='text/javascript' src='plugin/8-degree-notification-bar/js/frontend/jquery.marquee.min.js?ver=1.0.0'></script>
 <script type='text/javascript'>
-/* <![CDATA[ */
-<<<<<<< HEAD
-var ajaxsubs = {"ajaxurl":"http:\/\/localhost\/Solar%20Home%20Bd\/wp-admin\/admin-ajax.php","check_show_once":"0","control_type":"1"};
-=======
-var ajaxsubs = {"ajaxurl":"","check_show_once":"0","control_type":"1"};
->>>>>>> 3b03daa5faa0af2d6862d3e19805b2af826d1aeb
-/* ]]> */
-</script>
-<script type='text/javascript' src='plugin/8-degree-notification-bar/js/frontend/frontend.js?ver=1.1.7'></script>
-
 
 <style>.post-thumbnail img[src$='.svg'] { width: 100%; height: auto; }</style><style type='text/css' media='all'>.site-header.fixed { background: url("images/SHNlogo.png") no-repeat scroll left top; background-size: cover; }
 .site-header.fixed .header-sticky-overlay:before {
@@ -129,81 +87,106 @@ You can add your own CSS here.
 Click the help icon above to learn more.
 */
 		</style>
+
+
+
 	</head>
 
 <body>
+  <?php include 'header_result.php'; ?>
+  <section id="portfolio">
+    <div class="ed-container">
+        <div class="section-title">
+            <h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">Single Phase TL Series</h2>
+        </div>
+    <div class="portfolio-wrap clear wow fadeInUp product" data-wow-duration="2s">
+      <img src="images\Inverter1.JPG" alt = 'SP TL_Series' />
+    </div>
+    <h1>Product Specifications</h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th> 1100TL</th>
+            <th> 1600TL</th>
+            <th> 2200TL</th>
+            <th> 2700TL</th>
+            <th> 3000TL</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          <tr>
+            <td>Maximum Input Power (DC)</td>
+            <td>1200W</td>
+            <td>1800W</td>
+            <td>2400W</td>
+            <td>2900W</td>
+            <td>3300W</td>
+          </tr>
+          <tr>
+            <td>Rated Output Power (AC)</td>
+            <td>1000W</td>
+            <td>1550W</td>
+            <td>2100W</td>
+            <td>2600W</td>
+            <td>3100W</td>
+          </tr>
+          <tr>
+            <td>MPPT Voltage Range (DC)</td>
+            <td>110-450V</td>
+            <td>165-450V</td>
+            <td>170-500V</td>
+            <td>200-500V</td>
+            <td>200-500V</td>
+          </tr>
+          <tr>
+            <td>Grid Voltage Range (AC)</td>
+            <td>180~270V(According to local standard)</td>
+            <td>180~270V(According to local standard)</td>
+            <td>180~270V(According to local standard)</td>
+            <td>180~270V(According to local standard)</td>
+            <td>180~270V(According to local standard)</td>
 
-		<?php include 'views/header.php';?>
-    <!-- #masthead -->
-	<div id="content" class="site-content" style="margin-top: 20px;padding-top: 15px;">
-			<script type="text/javascript">
-				jQuery(function($){
-					$('.main-slider').bxSlider({
-								pager: true,
-								controls: true,
-								mode: 'fade',
-								auto : true
-							});
-				});
-			</script>
-			<!--slider -->
-      <?php include 'views/slider.php' ?>
+          </tr>
+          <tr>
+            <td>Grid Connection Type</td>
+            <td>Single Phase</td>
+            <td>Single Phase</td>
+            <td>Single Phase</td>
+            <td>Single Phase</td>
+            <td>Single Phase</td>
 
-		<!-- end of slider section -->
+          </tr>
+          <tr>
+            <td>Maximum Efficiency</td>
+            <td>97%</td>
+            <td>97%</td>
+            <td>97%</td>
+            <td>97.1%</td>
+            <td>97.2%</td>
+          </tr>
+          <tr>
+            <td>Dimensions (mm)</td>
+            <td>405*314*135 mm</td>
+            <td>405*314*135 mm</td>
+            <td>405*314*135 mm</td>
+            <td>405*314*135 mm</td>
+            <td>405*314*135 mm</td>
+          </tr>
+        </tbody>
 
-<!-- about section -->
-		<?php include 'views/about.php' ?>
-		<!-- end of portfolio section -->
+      </table>
+      <h2>To download details click <a href="pdf/Inverter/1___SP_TL_Series_1100TL, 1600TL, 2200TL, 2700TL, 3000TL.pdf" target="_blank">here</a></h2>
+    </div>
+
+  </section>
 
 
-<!-- calculator section -->
-
-<?php include 'views/calculator.php' ?>
-		<!-- end of calculator section -->
-
-<!-- portfolio section -->
-<?php include 'views/portfolio.php' ?>
-	<!-- end of portfolio section -->
-
-<!-- blog section -->
-
-<!-- testimonial section -->
-		<!-- end of testimonial section -->
-
-<!-- contact section -->
-		<?php include 'views/contact.php' ?>
-
-<!-- end of contact section -->
-
-</div><!-- #content -->
-<!--footer-->
-<?php include 'views/footer.php'; ?>
-
-<!-- #colophon -->
-</div><!-- #page -->
-<a href="#" id="go-to-top" title='Go to top'>&#8679;</a>
-<div id="jiXlCTRtJCEE" class="DMSjIEUbYHwx" style="background:#dddddd;max-width:720px;z-index:9999999; "></div>
-<?php include 'views/scripts.php' ?>
-
-<script>
-var modal = document.querySelector(".modal");
-    var trigger = document.querySelector(".trigger");
-    var closeButton = document.querySelector(".close-button");
-
-    function toggleModal() {
-        modal.classList.toggle("show-modal");
-    }
-
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
-        }
-    }
-
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-</script>
+  <?php include 'footer.php'; ?>
 </body>
-
 </html>
