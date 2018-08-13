@@ -59,6 +59,14 @@ body {
 	font-size: 15px;
 	font-family: 'Raleway', sans-serif;
 }
+#productimage{
+	width: 50%;
+	margin-left: 250px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
 
 article,
 aside,
@@ -223,10 +231,7 @@ input[type="radio"] {
 	padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-	height: auto;
-}
+
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
@@ -777,29 +782,6 @@ embed,
 iframe,
 object {
 	max-width: 100%;
-}
-
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
-.wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
-}
-
-.wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
-}
-
-.wp-caption-text {
-	text-align: center;
-	line-height: initial;
 }
 
 /*--------------------------------------------------------------
@@ -1382,7 +1364,7 @@ HEADER SECTION
 }
 .site-header, .site-header.fixed, .no-slider .site-header {
 	background-color: #ffffff;
-  opacity: 0.6;
+  /*! opacity: 0.6; */
   filter: alpha(opacity=60);
 }
 .admin-bar .site-header {
@@ -1435,8 +1417,7 @@ MAIN NAVIGATION
 .main-navigation ul li a {
     color: ;
     display: inline-block;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 20px;
     padding: 20px 15px;
     position: relative;
 }
@@ -1726,16 +1707,16 @@ MAIN SLIDER
     top: 50%;
     z-index: 1;
 }
-.eight_sec_plx_slider_section .slide-caption .caption-title {
-    color: #fff;
+.eight_sec_plx_slider_section .slide-caption .pv-title {
+    color: #d95c5c;
     font-size: 4em;
     font-weight: 700;
     margin: 0;
     position: relative;
 }
-.eight_sec_plx_slider_section .slide-caption .caption-title:after {
+.eight_sec_plx_slider_section .slide-caption .pv-title:after {
 	content: "";
-	background: #fff;
+	background: #d95c5c;
 	height: 2px;
 	width: 20%;
 	position: absolute;
@@ -1746,6 +1727,7 @@ MAIN SLIDER
 }
 .eight_sec_plx_slider_section .slide-caption .slide-content {
     color: #fff;
+		padding-top: 10px;
 }
 .eight_sec_plx_slider_section .slide-caption .slide-content p {
    font-family: open sans;
@@ -1941,7 +1923,6 @@ PORTFOLIO SECTION
 TEAM SECTION
 -----------------------------------------------*/
 .eight_sec_plx_team_section {
-	padding: 70px 0;
 	text-align: center;
 }
 .eight_sec_plx_team_section .team-description {
@@ -2281,7 +2262,7 @@ footer.site-footer {
 .top-footer .footer-block {
     float: left;
     padding: 0 15px;
-    width: 25%;
+    width: 50%;
 }
 .top-footer .widget {
     margin-bottom: 0;
@@ -2604,3 +2585,255 @@ ERROR PAGE
 }
 
 /*rate icon */
+
+/* Contact */
+.map {
+  width: auto;
+  height: auto;
+  margin:auto;
+  box-shadow: 0 0 40px -10px black;
+  background: rgb(240, 240, 240);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#map {
+  width: 65%;
+  height: 380px;
+  display: inline-block
+}
+
+.map-c {
+  float: right;
+  width: 35%;
+  height: 100%;
+  box-sizing: border-box
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+  color: rgb(60, 60, 70);
+  font-size: 28px
+}
+
+p {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 30px
+}
+
+.det {
+
+  font-size: 18px;
+	margin-top: 35px;
+}
+
+i {
+  font-size: 18px !important;
+}
+
+
+
+
+@media only screen and (max-width: 720px) {
+  .map {
+    height: 100%;
+    margin: calc(50vh - 225px) auto;
+    overflow: hidden
+  }
+  #map {
+    width: 100%;
+    height: 200px;
+  }
+  .map-c {
+    float: right;
+    width: 100%;
+  }
+  button {
+    float: right;
+    margin-top: -75px
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  p {
+    display: none
+  }
+  h1 {
+    margin-bottom:20px
+  }
+  button {
+    float: none;
+    margin-top: 10px
+  }
+  .det {
+    margin-bottom: 9px
+  }
+}
+
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+
+/*pop up*/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/*End style*/
+
+.popup{
+    width: 900px;
+    margin: auto;
+    text-align: center
+}
+.popup img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer
+}
+.show{
+    z-index: 999;
+    display: none;
+}
+.show .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*End style*/

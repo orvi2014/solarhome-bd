@@ -58,24 +58,11 @@ fieldset {
 }
 
 #contact button[type="submit"] {
-	cursor:pointer;
 	width:100%;
-	border:none;
-	background:#0CF;
-	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
 	font-size:15px;
 }
-
-#contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
 #contact input:focus, #contact textarea:focus {
 	outline:0;
@@ -109,3 +96,13 @@ fieldset {
  }
 #contact input[type="ratetype"]{
 	 color: blue;}
+
+/* Error msg css */
+#phone_error, #dc_error, #titlt_error, #rate_error {
+    font: inherit;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-left: 5px;
+    padding-right: 11px;
+		color:#F90303;
+	}
