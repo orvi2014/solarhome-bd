@@ -13,8 +13,7 @@ include 'databaseinsert.php';
   <?php include 'header_result.php'; ?>
   <section>
   <!--for demo wrap-->
-  <h1>Fixed Table header</h1>
-  <div class="tbl-header">
+  <div class="tbl-header" style="margin-top:100px;">
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
