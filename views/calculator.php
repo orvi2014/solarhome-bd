@@ -5,11 +5,7 @@
 
 <!-- return validate added so that we can get return value of validateForm()-->
 <form name="Calculator" id="contact" method="post" action="controller/api.php" onsubmit="return validateForm()" >
-<<<<<<< HEAD
-<h3>PVI Calculator</h3>
-=======
 <h3>Calculate PV System</h3>
->>>>>>> 3b03daa5faa0af2d6862d3e19805b2af826d1aeb
 <fieldset>
 <input placeholder="Company Name" name="company" type="text" tabindex="3" required autofocus>
 </fieldset>
@@ -39,11 +35,7 @@
 </fieldset>
 <div id="titlt_error"></div>
 <fieldset>
-<<<<<<< HEAD
-<input placeholder="Titlt" name="titlt" type="text" tabindex="23">
-=======
-<input placeholder="Titlt(23)" name="titlt" value="23" type="text" tabindex="23">
->>>>>>> 3b03daa5faa0af2d6862d3e19805b2af826d1aeb
+<input placeholder="Titlt(23)" name="titlt" type="text" tabindex="23">
 </fieldset>
 <fieldset>
 
